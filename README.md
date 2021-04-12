@@ -1,6 +1,7 @@
 See [`prepare.py`](prepare.py).
 
-The following interactive session shows the commands issued and the resulting outputs, with `$` indicating the command-line prompt.
+The following interactive session shows the commands issued and the resulting
+outputs, with `$` indicating the command-line prompt.
 
     $ ./prepare.py en.tok
     $ ngramsymbols en.tok en.sym
