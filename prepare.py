@@ -27,7 +27,7 @@ def main(args: argparse.Namespace) -> None:
             tokens = nltk.word_tokenize(line)
             print(" ".join(tokens), file=sink)
             # This logs information every 100k sentences.
-            if not lineno % 100000:
+            if not lineno % 100_000:
                 logging.info(f"{lineno:,} sentences processed")
 
 
