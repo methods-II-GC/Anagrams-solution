@@ -8,7 +8,7 @@ import nltk  # type: ignore
 
 
 def main(args: argparse.Namespace) -> None:
-    with gzip.GzipFile(args.gz, "rt") as source, open(
+    with gzip.GzipFile(args.gz, "r") as source, open(
         args.tok, "w"
     ) as sink:
         for line in source:
