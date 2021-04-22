@@ -12,7 +12,7 @@ def main(args: argparse.Namespace) -> None:
         args.tok, "w"
     ) as sink:
         for line in source:
-            tokens = nltk.word_tokenize(line)
+            tokens = nltk.word_tokenize(line.decode("utf8"))
             print(" ".join(tokens).casefold(), file=sink)
 
             
